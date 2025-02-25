@@ -25,12 +25,12 @@ const skills = [
 const Skills = () => {
     return (
         <div >
-            <h2 className="skillsText text-center">My Skills</h2>
+            <h2 className="skillsText text-center" id="skills">My Skills</h2>
             <p className="skills-description">
                 I can fix bugs and build websites using the following technologies.<br></br> 
                 I'm also flexible and eager to learn new technologies to improve my skills.
             </p>
-            <div className="skills-container p-4" id="skills">
+            <div className="skills-container p-4" >
                 <div className="skills-grid">
                     {skills.map((skill, index) => (
                         <div key={index} className="skill-box">
