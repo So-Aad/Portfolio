@@ -1,6 +1,7 @@
 .project-card {
   transition: transform 0.3s ease;
   display: flex;
+  border-top: 30px solid #ff7ef8;
   padding: 10px;
   flex-direction: row; /* Align content horizontally */
   background-color: transparent; /* Ensure no background color */
