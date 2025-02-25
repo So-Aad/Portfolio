@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Project.css";
 import img1 from "./assets/images/jaura.png";
@@ -54,11 +55,18 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="container py-5 id="project">
+    <div className="container py-5" id="project">
       <h2 className="text-center mb-4 pro">My Projects</h2>
       <div className="row">
         {projects.map((project, index) => (
-          <div key={index} className="col-md-6 mb-4">
+          <motion.div
+            key={index}
+            className="col-md-6 mb-4"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
+          >
             <div className="card project-card d-flex flex-row align-items-center">
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
@@ -73,7 +81,7 @@ const Portfolio = () => {
                       href={project.demoLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-sm lien" 
+                      className="btn btn-sm lien"
                     >
                       🔗 Demo
                     </a>
@@ -94,7 +102,7 @@ const Portfolio = () => {
                 className="project-image"
               />
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
