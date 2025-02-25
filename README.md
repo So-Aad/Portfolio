@@ -1,3 +1,12 @@
+# 💼 My Portfolio
+
+Welcome to my personal portfolio! This repository showcases my work as a full-stack web developer, highlighting my projects, skills, and experience in web development.
+
+![Macbook-Air-soaad-portfolio netlify app](https://github.com/user-attachments/assets/d3f53bc0-7de1-47a9-a53e-0ddffc8b7d91)
+
+## 🌍 Live Demo
+Check out the live version of my portfolio [here](https://soaad-portfolio.netlify.app/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,9 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# 💼 My Portfolio
 
-Welcome to my personal portfolio! This repository showcases my work as a full-stack web developer, highlighting my projects, skills, and experience in web development.
-## 🌍 Live Demo
-Check out the live version of my portfolio [here](https://soaad-portfolio.netlify.app/).
 
