@@ -2,6 +2,7 @@
 .cont {
     background-color: #1a1a1a;
     border-radius: 30px;
+    border-top: 30px solid #ff7ef8;
     width: 98%;
     height: 98vh;
     margin: 7px auto;
