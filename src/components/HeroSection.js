@@ -14,22 +14,22 @@ function Hero() {
             <nav className="menu">
                 <ul className="nav">
                     <li className="nav-item">
-                        <a className="nav-link scroll-link" href="#about" >
+                        <a className="nav-link scroll-link" href="#about" title="About me">
                             <i className="bi bi-person-circle"></i>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link scroll-link" href="#skills">
+                        <a className="nav-link scroll-link" href="#skills" title="My Skills">
                             <i className="bi bi-code-slash"></i>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#project">
+                        <a className="nav-link" href="#project" title="My Projects">
                             <i className="bi bi-folder-fill"></i>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#contact">
+                        <a className="nav-link" href="#contact" title="Contact Me">
                             <i className="bi bi-envelope"></i>
                         </a>
                     </li>
