@@ -1,0 +1,97 @@
+.skills-container {
+    text-align: center;
+    border-radius:15px;
+    width: 98%;
+    padding: 20px;
+    margin: 7px auto;
+    background-color: rgb(39, 38, 38);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.skills-description {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(39, 38, 38);
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 20px;
+}
+.skillName{
+    color: white;
+}
+
+.skill-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 120px;
+    /* background: #f9f9f9; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+}
+
+/* Add hover effects */
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgb(247, 33, 200);
+}
+.skillsText{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-image: url('./assets/images/colorfull2.jpg');
+    background-clip: text;
+    color: transparent;
+    animation: roll 3s linear infinite;
+
+}
+
+@keyframes roll {
+    to {
+        background-position: -200% 0;
+    }
+}
+
+/* Icon styles with individual colors */
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-box:hover .icon {
+    transform: rotate(10deg) scale(1.2);
+}
+
+/* Colors for each icon */
+.html-icon { color: #e34c26; }    /* HTML - Orange */
+.css-icon { color: #264de4; }     /* CSS - Blue */
+.js-icon { color: #f7df1e; }      /* JavaScript - Yellow */
+.react-icon { color: #61dafb; }   /* React - Light Blue */
+.php-icon { color: #777bb3; }     /* PHP - Purple */
+.laravel-icon { color: #ff2d20; } /* Laravel - Red */
+.mysql-icon { color: #00758f; }   /* MySQL - Dark Blue */
+.mongodb-icon { color: #4db33d; } /* MongoDB - Green */
+.git-icon { color: #f14e32; }     /* Git - Orange */
+.bootstrap-icon { color: #7952b3; }
+.python-icon { color: #5528f8; } 
+.github-icon{color:white;} /* Bootstrap - Violet */
+
+/* Text styles */
+.skill-box p {
+    font-weight: bold;
+    color: #333;
+}

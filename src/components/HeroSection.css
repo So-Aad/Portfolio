@@ -1,0 +1,235 @@
+/* Container */
+.cont {
+    background-color: #1a1a1a;
+    border-radius: 30px;
+    width: 98%;
+    height: 98vh;
+    margin: 7px auto;
+    padding: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
+/* Title - Fixed to top left */
+.title {
+    font-family: "Cinzel", serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    white-space: nowrap;
+    display: inline-block; /* Ensure it works properly */
+    overflow: hidden; /* Hide text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    border-right: 2px solid white; /* Simulate typing cursor */
+    animation: typing 5s steps(30, start) forwards ,
+    blink-caret 0.5s step-start infinite 1s,
+    roll 3s linear infinite;
+    background-image: url('./assets/images/colorfull2.jpg');
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    
+    
+}
+
+@keyframes typing  {
+    from {
+        width: 0;
+    }
+    to {
+        width: 89%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-right: none; /* Hide cursor after typing */
+    }
+}
+
+/* Navbar - Fixed to top right */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    gap: 15px;
+    
+}
+
+/* Nav Links */
+.nav-link {
+    font-size: 18px;
+    color: #ff7ef8;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Adjust icon size */
+.nav-link i {
+    font-size: 25px;   
+}
+/* Hover Effect */
+.nav-link:hover {
+    color: #4bb7c4 !important;
+}
+
+/* Responsive: Center elements on small screens */
+@media (max-width: 768px) {
+    .title {
+        position: relative;
+        text-align: center;
+        display: block;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 19px;
+       
+        
+    }
+    .menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left:30px;
+    }
+    .cv {
+        width: 80%;
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding:2px;
+        
+    }
+    /* .cv-container {
+        position:absolute;
+        top:-50px;
+        justify-content: center; 
+
+    } */
+
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* .profileText {
+        margin-left:-50px;
+        width:80%;
+    } */
+     .cont{
+        height: 100vh;
+     }
+}
+.imageContainer {
+    width: 260px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%; /* Rounded corners */
+    overflow: hidden;
+    border:5px solid #ff7ef8;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotateCircle 3s linear ;
+  }
+  @keyframes rotateCircle {
+    0% {
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+}
+.profileText {
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50%; /* Move to center */
+    transform: translateX(-50%); /* Perfect centering */
+    font-weight: bold;
+    font-style: italic;
+   
+    text-align: center; /* Ensure multi-line text stays centered */
+   
+    
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit max width */
+}
+
+@keyframes roll{
+    to{
+        background-position:-200% 0;
+    }
+}
+.teckit{
+    color: rgb(39, 38, 38);
+    background-color: #ff7ef8;
+    padding:8px;
+    border-radius:10px;
+    position:absolute;
+    top:30%;
+    left:57%;
+    font-weight: bold;
+    transform: rotate(345deg);
+    border:2px solid  rgb(39, 38, 38);
+    animation: float 1.5s ease-in-out infinite;
+}  
+@keyframes float {
+    0%, 100% {
+      transform: rotate(345deg) translateY(0); /* Starting and ending position */
+    }
+    50% {
+      transform: rotate(345deg) translateY(-10px); /* Move up by 10px */
+    }
+  }
+  .cv {
+    width: 100%x;
+    height: auto;
+    background-color: #ff7ef8;
+    color: rgb(39, 38, 38);
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    /* animation: floati 1.5s ease-in-out infinite; */
+}
+.cv-container {
+    position: absolute;
+    bottom: 20px; /* Keeps it at the bottom with spacing */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* @keyframes floati {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform:  translateY(-10px); 
+    }
+  } */
+  .cv:hover{
+    color:white;
+    background-color: #4bb7c4;
+    box-shadow: 0 8px 16px rgb(247, 33, 200);
+
+  }
