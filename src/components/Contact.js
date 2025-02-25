@@ -25,7 +25,7 @@ const ContactForm = () => {
   return (
     <>
       <h1 className="text-center contactText" id="contact">CONTACT ME</h1>
-      <div className="contact-container container-fluid >
+      <div className="contact-container container-fluid" >
         <div className="row align-items-center">
           {/* Contact Form on the Left */}
           <div className="col-lg-6 col-md-12">
