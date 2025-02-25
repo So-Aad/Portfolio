@@ -24,7 +24,7 @@ function Hero() {
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#projects">
+                        <a className="nav-link" href="#project">
                             <i className="bi bi-folder-fill"></i>
                         </a>
                     </li>
