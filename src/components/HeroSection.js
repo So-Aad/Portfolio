@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HeroSection.css';
-import photo1 from './assets/images/soaad.jpg';
+import photo1 from './assets/images/soaad.jpeg';
 
 
 function Hero() {
