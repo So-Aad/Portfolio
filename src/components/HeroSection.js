@@ -48,7 +48,7 @@ function Hero() {
 
             {/* Button Centered Below h3 */}
             <div className="cv-container">
-                <a href="/SoaadChafyq.pdf" download className="cv btn">
+                <a href="/myCV.pdf" download className="cv btn">
                     Download my CV! <i className="bi bi-file-earmark-text"></i>
                 </a>
             </div>
